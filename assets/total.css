@@ -1,0 +1,193 @@
+/* v.1 por Anilésio Xavier
+contém todo estilo complementar ao Materialize
+*/
+
+
+/* Costumização do Materialize */
+
+input,
+textarea {
+    background-color: #f3f3f3 !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ff5252;
+    -webkit-box-shadow: 0 1px 0 0 #ff5252;
+    box-shadow: 0 1px 0 0 #ff5252;
+}
+
+.card-title {
+    font-weight: 500 !important;
+}
+
+a {
+    text-transform: inherit !important;
+}
+
+.red-shadow-fixed {
+    /* box-shadow: 2px 5px 20px 5px #02124480; */
+    box-shadow: 2px 5px 20px 5px #02124480;
+
+}
+
+.red-shadow:hover {
+    box-shadow: 2px 5px 20px 5px #02124480;
+}
+
+.pagination li.active {
+    background-color: #ff5252;
+    margin: 1px;
+}
+
+
+/* end Costumização do Materialize */
+
+.bold-300 {
+    font-weight: 300 !important;
+}
+
+.bold-500 {
+    font-weight: 500 !important;
+}
+
+.bold-700 {
+    font-weight: 700 !important;
+}
+
+.bold-900 {
+    font-weight: 900 !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.sp-m-0 {
+    margin: 0;
+}
+
+.sp-m-top-1 {
+    margin-top: 6% !important;
+}
+
+.sp-m-top-2 {
+    margin-top: 10% !important;
+}
+
+.sp-m-top-3 {
+    margin-top: 14% !important;
+}
+
+.sp-p-1 {
+    padding: 6%;
+}
+
+.line-30 {
+    line-height: 30pt;
+}
+
+.line-40 {
+    line-height: 40pt;
+}
+
+.text-1 {
+    font-size: 1em;
+}
+
+.text-2 {
+    font-size: 2em;
+}
+
+.text-3 {
+    font-size: 3em;
+}
+
+.border-r-1 {
+    border-radius: 10px;
+}
+
+.border-r-2 {
+    border-radius: 20px;
+}
+
+.border-1 {
+    border: 1px solid #dedede;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.other-banner {
+    height: 40vh;
+    background: linear-gradient(to top, #dedede, #dadada);
+    padding: 2%;
+    text-align: center;
+}
+
+.progress-total-1,
+.progress-total-2,
+.progress-total-2,
+.progress-total-3,
+.progress-total-4,
+.progress-total-5,
+.progress-total-6 {
+    text-align: right;
+    width: 100%;
+    background-color: #afafaf;
+    /* border-radius: 5px; */
+    /* color: #2196f3; */
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.progress-total-1::after {
+    content: '80%';
+    width: 80%;
+    background-color: #bbdefb;
+    display: block;
+    padding-right: 10px;
+    line-height: 15pt;
+}
+
+.progress-total-2::after {
+    content: '37,5%';
+    width: 37.5%;
+    background-color: #90caf9;
+    display: block;
+    padding-right: 10px;
+    line-height: 15pt;
+}
+
+.progress-total-3::after {
+    content: '55%';
+    width: 55%;
+    background-color: #64b5f6;
+    display: block;
+    padding-right: 10px;
+    line-height: 15pt;
+}
+
+.progress-total-4::after {
+    content: '45%';
+    width: 45%;
+    background-color: #5eacf0;
+    display: block;
+    padding-right: 10px;
+    line-height: 15pt;
+}
+
+.progress-total-5::after {
+    content: '40%';
+    width: 40%;
+    background-color: #2196f3;
+    display: block;
+    padding-right: 10px;
+    line-height: 15pt;
+}
