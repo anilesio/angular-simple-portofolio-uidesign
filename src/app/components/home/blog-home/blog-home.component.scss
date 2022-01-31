@@ -1,0 +1,44 @@
+.owl-theme .item img {
+  transition: 0.3s all ease-in-out;
+}
+
+// .owl-theme .item:hover img {
+//   transform: scale(1.1);
+// }
+
+.owl-theme .item::after:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #304ffec0, #304ffec0 0%);
+  background-size: cover;
+}
+
+
+
+// .custom-shape-divider-top-1643294394 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+// }
+
+// .custom-shape-divider-top-1643294394 svg {
+//   position: relative;
+//   display: block;
+//   width: calc(147% + 1.3px);
+//   height: 221px;
+// }
+
+.custom-shape-divider-top-1643294394 .shape-fill {
+  fill: #e1f0fc;
+  transform: rotate(180deg);
+}
+
+.blog-fundo{
+  background-color: #e1f0fc;
+}

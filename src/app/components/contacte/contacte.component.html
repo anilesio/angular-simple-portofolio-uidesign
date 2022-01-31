@@ -1,0 +1,64 @@
+<section id="banner">
+    <div class="bannerIntro">
+        <div class="row container espaco-p-top-2 espaco-p-baixo-1">
+            <div class="col s12 m6 l6" data-aos="fade-up" data-aos-delay="400">
+                <!-- <span class="negrito grey-text texto-2">N</span> <br> -->
+                <h2 class="espaco-m-0 negrito texto-6 blue-text text-darken-1">Deixe a sua mensagem</h2>
+                <p class="espaco-m-0 texto-2">Desde já, tenho agradeço imenso pelo interesse. Mande para mim a sua crítica, elogio ou solicitação de parcerias.</p>
+                <div class="espaco-m-top-0">
+                    <a routerLink="/projectos" class="btn blue btn-large darken-4">Ver projectos</a>
+                    <a routerLink="/sobre" class="btn espaco-m-left-1 btn-large transparent fundo-00 borda z-depth-0">Sobre mim</a>
+                </div>
+            </div>
+            <div class="col s12 m6 l6 hide-on-small-and-down" data-aos="fade-up" data-aos-delay="300">
+                <form [formGroup]="this.formValue"  action="" method="post">
+                    <div class="row">
+                        <div class="col s12 m6 l6 espaco-m-top-0">
+                            <input formControlName="primeiroNome" name="primeiroNome" id="primeiroNome" type="text" class="browser-default estilo-input" placeholder="Primeiro nome" />
+                        </div>
+                        <div class="col s12 m6 l6 espaco-m-top-0">
+                            <input  formControlName="ultimoNome" name="ultimoNome" id="ultimoNome" type="text" class="browser-default estilo-input" placeholder="Último nome" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m6 l6 espaco-m-top-0">
+                            <input type="tel"  pattern="[0-9]{9}" maxlength="9" formControlName="telefone" id="telefone" name="telefone" class="browser-default estilo-input" placeholder="Telefone" />
+                        </div>
+                        <div class="col s12 m6 l6 espaco-m-top-0">
+                            <input type="email"  formControlName="email" name="email" id="email" class="browser-default estilo-input" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l12 espaco-m-top-0">
+                            <select formControlName="assunto" name="assunto" class="browser-default estilo-input" id="assunto">
+                                <optgroup label="Seleccione uma opção">
+                                    <option [value]="item.body" *ngFor="let item of this.assunto">{{item.body}} </option>
+                                   
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col s12 m12 l12 espaco-m-top-0">
+                            <textarea name="mensagem"  formControlName="mensagem" placeholder="Deixe a sua mensagem..." class="browser-default estilo-input" id="mensagem" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>*Preencha todos os campos</p>
+                            <button type="button" [disabled]="!this.formValue.valid" (click)="this.postFaleconnosco()" class="btn blue btn-large darken-4"><span class="fa fa-envelope"></span> Enviar mensagem</button>
+                        </div>
+                    </div>
+
+                    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+                </form>
+            </div>
+        </div>
+    <svg class="svg-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e1f0fc" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,128C274.3,128,343,160,411,160C480,160,549,128,617,133.3C685.7,139,754,181,823,202.7C891.4,224,960,224,1029,234.7C1097.1,245,1166,267,1234,250.7C1302.9,235,1371,181,1406,154.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </div>
+</section>
+
+
